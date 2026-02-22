@@ -4,17 +4,19 @@
 <title>B-LUX ONE LIMITED</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
+<!-- External CSS demonstration -->
+<link rel="stylesheet" href="style.css">
 
-/* ===== PREMIUM BACKGROUND ===== */
+<style>
+/* ===== Internal CSS ===== */
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     background-color: #1c1c1c;
     color: white;
+    text-align: center; /* center all content */
 }
 
-/* ===== MAIN WRAPPER ===== */
 .main-wrapper{
     width: 95%;
     max-width: 1300px;
@@ -25,20 +27,16 @@ body{
     box-shadow: 0 10px 25px rgba(0,0,0,0.5);
 }
 
-/* ===== HEADINGS ===== */
-h1, h2, h3, h4 {
-    color: #b0f4ff;
-    text-align: center;
-    letter-spacing: 1px;
+/* Container styling */
+.container-box{
+    margin: 30px 0;
+    padding: 25px;
+    background: #2a2a2a;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
 }
 
-/* ===== PARAGRAPHS ===== */
-p{
-    font-size: 18px;
-    line-height: 1.6;
-}
-
-/* ===== TABLE STYLING ===== */
+/* Tables */
 table {
     width: 100%;
     margin-top: 25px;
@@ -52,12 +50,10 @@ th {
     background-color: #117a65;
     color: white;
     padding: 12px;
-    font-size: 17px;
 }
 
 td {
     padding: 12px;
-    text-align: center;
     border: 1px solid #444;
 }
 
@@ -70,39 +66,7 @@ tr:hover {
     transition: 0.3s ease;
 }
 
-/* ===== IMAGES ===== */
-img{
-    border-radius: 10px;
-    transition: transform 0.3s ease;
-}
-
-img:hover{
-    transform: scale(1.05);
-}
-
-/* ===== VIDEO ===== */
-iframe{
-    display: block;
-    margin: 30px auto;
-    border-radius: 12px;
-    max-width: 100%;
-}
-
-/* ===== CONTAINERS ===== */
-.container-box{
-    margin: 30px 0;
-    padding: 25px;
-    background: #2a2a2a;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
-    transition: transform 0.3s ease;
-}
-
-.container-box:hover{
-    transform: translateY(-6px);
-}
-
-/* ===== FOOTER ===== */
+/* Footer */
 footer{
     background-color: #111;
     color: #b0f4ff;
@@ -110,37 +74,30 @@ footer{
     text-align: center;
     border-top: 2px solid #117a65;
 }
-
-mark{
-    background-color: #ffcc00;
-    color: black;
-}
-
-hr{
-    border: 1px solid #444;
-}
-
 </style>
-</head>
 
+</head>
 <body>
 
+<!-- ===== MAIN WRAPPER ===== -->
 <div class="main-wrapper">
 
-<!-- ========================= -->
-<!-- YOUR ORIGINAL CONTENT -->
-<!-- NOTHING REMOVED -->
-<!-- ========================= -->
-
-<h1>This website is about shoes</h1>
+<!-- ===== Container 1 ===== -->
+<div class="container-box">
+<h1 style="color:#ffcc00;">This website is about shoes</h1> <!-- inline CSS -->
 <p>Shoes is all about style and connecting with culture </p>
+</div>
+
+<!-- ===== Container 2 ===== -->
+<div class="container-box">
 <h1>B-LUX ONE LIMITED</h1>
 <h2>My name is Brasil Wahanda heir to the B Lux One</h2>
 <p>We specialize in creating stylish, comfortable, and affordable sneakers for everyone.Shoes are more than just something you wear—they’re how you move through the world.They protect your feet, support your stride, and shape your comfort every day.From casual walks to big moments, the right pair makes all the difference.Style, function, and confidence start from the ground up. </p>
+</div>
 
+<!-- ===== Container 3 ===== -->
+<div class="container-box">
 <h3>Our Shoe Collection</h3>
-
-<!-- Your original tables remain untouched -->
 <table border="1" cellpadding="10">
 <tr>
     <th>Shoe Name</th>
@@ -163,19 +120,26 @@ hr{
     <td>$50</td>
 </tr>
 </table>
+</div>
 
-<!-- Image table unchanged -->
+<!-- ===== Container 4 ===== -->
+<div class="container-box">
 <table border="1" cellpadding="10">
 <tr>
-<td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZFTLQdXpCbdvhRd3lfAYnpeLKLeI0Rh8i2jbThvblLrDXNJQJzTwdFgk&s=10" width="250"></td>
-<td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOq92_7hoKuVic8Ob8r5xAh-CdIE1fHk5eIPXbV3f1bWgDT5zaLm5qcfI&s=10" width="250"></td>
-<td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQke7cuMa9lCqF3sN7jFbyGKUJAu6iUlBfUR2m1TnAziw&s=10" width="250"></td>   
+<td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZFTLQdXpCbdvhRd3lfAYnpeLKLeI0Rh8i2jbThvblLrDXNJQJzTwdFgk&s=10" width="250" alt="B-Lux Runner"></td>
+<td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOq92_7hoKuVic8Ob8r5xAh-CdIE1fHk5eIPXbV3f1bWgDT5zaLm5qcfI&s=10" width="250" alt="B-Lux Street Pro"></td>
+<td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQke7cuMa9lCqF3sN7jFbyGKUJAu6iUlBfUR2m1TnAziw&s=10" width="250" alt="B-Lux Classic"></td>   
 </tr>
 </table>
+</div>
 
+<!-- ===== Container 5 ===== -->
+<div class="container-box">
 <iframe width="780" height="439" src="https://www.youtube.com/embed/Jv7n3aukt8E" frameborder="0" allowfullscreen></iframe>
+</div>
 
-<!-- Inventory table unchanged -->
+<!-- ===== Inventory Table Container ===== -->
+<div class="container-box">
 <table border="2">
 <caption><b>B-LUX INVENTORY TABLE</b></caption>
 <tr>
@@ -201,12 +165,12 @@ hr{
 <tr><td>7</td><td>Comfort</td><td>Everyday</td><td>39</td><td>Black</td><td>$48</td><td>60</td><td>4.3</td></tr>
 <tr><td>8</td><td>Edge</td><td>Casual</td><td>41</td><td>Brown</td><td>$58</td><td>28</td><td>4.6</td></tr>
 </table>
+</div>
 
 <footer>
 © 2026 B-LUX ONE LIMITED | Designed by Brasil Wahanda
 </footer>
 
 </div>
-
 </body>
 </html>
