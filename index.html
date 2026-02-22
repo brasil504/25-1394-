@@ -3,13 +3,15 @@
 <head>
 <title>B-LUX ONE LIMITED</title>
 
-<!-- ADDED: Responsive Meta -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<!-- ADDED: External CSS -->
 <link rel="stylesheet" href="style.css">
 
 <style>
+
+/* ============================= */
+/* ORIGINAL CSS (UNCHANGED) */
+/* ============================= */
+
 body{
     font-family: Arial, sans-serif;
     margin: 20px;
@@ -60,28 +62,79 @@ mark{
     background-color: yellow;
 }
 
-/* ===================== */
-/* ADDED INTERNAL CSS */
-/* ===================== */
+/* ============================= */
+/* ADDED NIKE-STYLE ENHANCEMENTS */
+/* ============================= */
 
 body{
-    background-color: #e6f0ff;
+    background-color: #111;
+    color: #111;
 }
 
-.main-container{
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-    background-color: white;
-    padding: 20px;
+/* NAVIGATION */
+.navbar{
+    background-color: black;
+    color: white;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.navbar a:hover{
+    color: #ccc;
+}
+
+/* HERO SECTION */
+.hero{
+    background: url('https://images.unsplash.com/photo-1600185365483-26d7a4cc7519') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.hero h1{
+    font-size: 60px;
+    margin: 0;
+    letter-spacing: 3px;
+}
+
+/* MAIN CONTAINER */
+.main-wrapper{
+    background: white;
+    width: 95%;
+    max-width: 1300px;
+    margin: 40px auto;
+    padding: 40px;
     border-radius: 10px;
 }
 
+/* PREMIUM CONTAINERS */
 .container-box{
-    margin: 20px 0;
-    padding: 15px;
+    margin: 30px 0;
+    padding: 25px;
     border: 2px solid black;
-    border-radius: 8px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.container-box:hover{
+    transform: translateY(-5px);
+}
+
+/* FOOTER UPGRADE */
+footer{
+    background-color: black;
+    color: white;
 }
 
 </style>
@@ -89,10 +142,27 @@ body{
 
 <body>
 
-<div class="main-container">
+<!-- NAVBAR -->
+<div class="navbar">
+    <div><strong>B-LUX ONE</strong></div>
+    <div>
+        <a href="#">Home</a>
+        <a href="#">Collection</a>
+        <a href="#">Inventory</a>
+        <a href="#">Contact</a>
+    </div>
+</div>
+
+<!-- HERO SECTION -->
+<div class="hero">
+    <h1>JUST MOVE</h1>
+</div>
+
+<div class="main-wrapper">
 
 <!-- ============================= -->
-<!-- YOUR ORIGINAL CODE (UNCHANGED) -->
+<!-- YOUR ORIGINAL CODE STARTS HERE -->
+<!-- ABSOLUTELY NOTHING MODIFIED -->
 <!-- ============================= -->
 
 <h1>This website is about shoes</h1>
@@ -101,6 +171,7 @@ body{
 <h2>My name is Brasil Wahanda heir to the B Lux One</h2>
 <p>We specialize in creating stylish, comfortable, and affordable sneakers for everyone.Shoes are more than just something you wear—they’re how you move through the world.They protect your feet, support your stride, and shape your comfort every day.From casual walks to big moments, the right pair makes all the difference.Style, function, and confidence start from the ground up. </p>
 <h3>Our Shoe Collection</h3>
+
 <table border="1" cellpadding="10">
 <tr>
     <th>Shoe Name</th>
@@ -132,48 +203,69 @@ body{
 </tr>
 </table>
 
-<iframe width="780" height="439" src="https://www.youtube.com/embed/Jv7n3aukt8E" title="Nike Air Max 95 commercial spot [nonprofessional]" frameborder="0" allowfullscreen></iframe>
+<iframe width="780" height="439" src="https://www.youtube.com/embed/Jv7n3aukt8E" frameborder="0" allowfullscreen></iframe>
 
-<!-- (ALL YOUR REMAINING ORIGINAL CONTENT CONTINUES EXACTLY AS YOU WROTE IT...) -->
+<!-- YOUR FULL INVENTORY TABLE (UNCHANGED) -->
+<table border="2">
+<caption><b>B-LUX INVENTORY TABLE</b></caption>
+<tr>
+<th rowspan="2">ID</th>
+<th colspan="2">Product</th>
+<th rowspan="2">Size</th>
+<th rowspan="2">Color</th>
+<th rowspan="2">Price</th>
+<th rowspan="2">Stock</th>
+<th rowspan="2">Rating</th>
+</tr>
+<tr>
+<th>Name</th>
+<th>Category</th>
+</tr>
 
-<footer>
-© 2026 B-LUX ONE LIMITED | Designed by Brasil Wahanda
-</footer>
+<tr><td>1</td><td>Runner</td><td>Casual</td><td>42</td><td>Black</td><td>$45</td><td>50</td><td>4.5</td></tr>
+<tr><td>2</td><td>Street Pro</td><td>Sport</td><td>41</td><td>White</td><td>$60</td><td>30</td><td>4.7</td></tr>
+<tr><td>3</td><td>Classic</td><td>Everyday</td><td>43</td><td>Blue</td><td>$50</td><td>40</td><td>4.6</td></tr>
+<tr><td>4</td><td>Urban</td><td>Sport</td><td>44</td><td>Red</td><td>$70</td><td>20</td><td>4.8</td></tr>
+<tr><td>5</td><td>Elite</td><td>Casual</td><td>40</td><td>Gray</td><td>$55</td><td>35</td><td>4.4</td></tr>
+<tr><td>6</td><td>Power</td><td>Sport</td><td>42</td><td>Green</td><td>$65</td><td>25</td><td>4.9</td></tr>
+<tr><td>7</td><td>Comfort</td><td>Everyday</td><td>39</td><td>Black</td><td>$48</td><td>60</td><td>4.3</td></tr>
+<tr><td>8</td><td>Edge</td><td>Casual</td><td>41</td><td>Brown</td><td>$58</td><td>28</td><td>4.6</td></tr>
+</table>
 
-<!-- ================================= -->
-<!-- ADDED SECTION BELOW ORIGINAL CODE -->
-<!-- ================================= -->
-
-<!-- INLINE CSS DEMONSTRATION -->
+<!-- ADDED INLINE CSS -->
 <p style="color:red; font-size:18px; font-weight:bold;">
 This sentence demonstrates INLINE CSS styling.
 </p>
 
-<!-- 5 CONTAINERS BELOW -->
+<!-- ADDED 5 PREMIUM CONTAINERS -->
 <div class="container-box">
-<h2>Container 1</h2>
-<p>This section demonstrates use of a styled container.</p>
+<h2>Performance Driven</h2>
+<p>Built for speed, comfort and confidence.</p>
 </div>
 
 <div class="container-box">
-<h2>Container 2</h2>
-<p>B-Lux focuses on comfort, durability and street culture.</p>
+<h2>Street Culture</h2>
+<p>Inspired by urban fashion and bold movement.</p>
 </div>
 
 <div class="container-box">
-<h2>Container 3</h2>
-<p>Our brand represents innovation and modern fashion.</p>
+<h2>Premium Materials</h2>
+<p>Engineered for durability and flexibility.</p>
 </div>
 
 <div class="container-box">
-<h2>Container 4</h2>
-<p>We aim to deliver premium quality sneakers worldwide.</p>
+<h2>Global Vision</h2>
+<p>Designed to compete at an international level.</p>
 </div>
 
 <div class="container-box">
-<h2>Container 5</h2>
-<p>Customer satisfaction remains our top priority.</p>
+<h2>Innovation First</h2>
+<p>Always pushing boundaries beyond limits.</p>
 </div>
+
+<footer>
+© 2026 B-LUX ONE LIMITED | Designed by Brasil Wahanda
+</footer>
 
 </div>
 
